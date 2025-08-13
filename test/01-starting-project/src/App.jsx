@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 import reactImg from './assets/react-core-concepts.png';
 import componentsImg from './assets/components.png';
 
@@ -21,6 +22,25 @@ function CoreConcept(props) {
 function Header() {
   const des = reactDescription[getRandomInt(reactDescription.length)];
 
+=======
+const readdeescription=["Fundamental","core","react","citeria"]
+function getRandom(max){
+  return Math.floor(Math.random(3) *max)
+  
+
+function Coreconcept(){
+  return(
+  <li>
+    <p>The description area/</p>
+  </li>
+  )
+}
+}
+
+
+function Header() {
+  const des=readdeescription[getRandom(readdeescription.length)];
+>>>>>>> Stashed changes
   return (
     <header>
       <img src={reactImg} alt="" />
@@ -46,6 +66,7 @@ function App() {
       <main>
         <h2>Time to get started!</h2>
       </main>
+<<<<<<< Updated upstream
 
       <section id='core-concepts'>
         <h2>Core Concepts </h2>
@@ -71,6 +92,18 @@ function App() {
       </section>
 
 
+=======
+      <section id='core-concepts'>
+        <h2>Core Concepts</h2>
+        <ul>
+        <CoreConcept/>
+        <CoreConcept/>
+        <CoreConcept/>
+        </ul>
+        
+      </section>
+      
+>>>>>>> Stashed changes
     </div>
   );
 }
