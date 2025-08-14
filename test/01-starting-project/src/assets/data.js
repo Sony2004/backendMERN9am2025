@@ -1,3 +1,6 @@
+import { componentsImg } from "./asset"
+
+
 export const CORE_CONCEPTS = [
     {
         image : componentsImg,
