@@ -20,6 +20,7 @@ function CoreConcept(props) {
 }
 
 function Header() {
+  
   const des = reactDescription[getRandomInt(reactDescription.length)];
 
 =======
