@@ -9,10 +9,10 @@ import { EXAMPLES } from './data.js'
 
 
 
-
+ 
 function App() {
 
-  const [selectedTopic, setSelectedTopic] = useState('Please Click a Button')
+  const [selectedTopic, setSelectedTopic] = useState('components')
 
   let tabContent = "Please select a tab to view content";
 
