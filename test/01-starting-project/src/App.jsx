@@ -1,12 +1,41 @@
-import { CORE_CONCEPTS } from './data.js';
-import Header from './components/Header/Header.jsx';
-import CoreConcept from './components/coreconcepts/CoreConcepts.jsx';
-import TabButton from './components/tabbutton.jsx';
-import { useState } from 'react';
-import { EXAMPLES } from './data.js'
+import reactImg from './assets/react-core-concepts.png';
+import componentsImg from './assets/components.png';
+
+const reactDescription = ['Fundamental', "core", "concepts", "crucial"]
+
+function getRandomInt(max) {
+  return Math.floor(Math.random() * max);
+}
+
+function CoreConcept(props) {
+  return (
+
+    <li>
+      <img src={props.image} alt={props.title} />
+      <h3>{props.title}</h3>
+      <p>{props.description}</p>
+    </li>
+  )
+}
+
+function Header() {
+  const des = reactDescription[getRandomInt(reactDescription.length)];
+
+  return (
+    <header>
+      <img src={reactImg} alt="" />
+      <h1>React Essentials </h1>
+
+      <p>
+        {des} React concepts you will need for almost any app you are
+        going to build!
+      </p>
+    </header>
 
 
 
+  )
+}
 
 
 
